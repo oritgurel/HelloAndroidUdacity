@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true">
+
+
+        <ImageView
+            android:id="@+id/our_people"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/udacity_people">
+
+        </ImageView>
+
+        <TextView
+            android:layout_alignParentLeft="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="20dp"
+            android:layout_marginLeft="16dp"
+            android:paddingTop="20dp"
+            android:text="@string/join_us"
+            android:textColor="#FBDFBA"
+            android:textSize="32sp"
+            android:textStyle="bold|italic"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="#99ffffff"
+        android:layout_alignParentBottom="true">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="200dp"
+            android:layout_height="120dp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:src="@drawable/udacity_logo">
+
+        </ImageView>
+
+
+        <TextView
+            android:id="@+id/website"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:fontFamily="sans-serif"
+            android:layout_toLeftOf="@id/logo"
+            android:layout_margin="16dp"
+            android:autoLink="web"
+            android:textColorLink="@color/colorPrimaryDark"
+            android:text="@string/website"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/street"
+            android:layout_alignParentLeft="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/city"
+            android:layout_marginLeft="16dp"
+            android:fontFamily="sans-serif"
+            android:padding="2dp"
+            android:text="@string/street"
+            android:textSize="16sp"
+            />
+
+        <TextView
+            android:id="@+id/city"
+            android:layout_alignParentLeft="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="16dp"
+            android:fontFamily="sans-serif"
+            android:padding="2dp"
+            android:autoLink="map"
+            android:text="@string/city_state"
+            android:textSize="14sp"
+            />
+
+        <TextView
+            android:id="@+id/phoneNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignBottom="@+id/city"
+            android:layout_marginHorizontal="16dp"
+            android:fontFamily="sans-serif"
+            android:padding="2dp"
+            android:autoLink="phone"
+            android:textColorLink="#5e5e5e"
+            android:text="@string/phone_number"
+            android:textSize="24sp"/>
+
+
+    </RelativeLayout>
+</RelativeLayout>
